@@ -1,0 +1,143 @@
+html{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.loader{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 5px solid silver;
+  border-top-color: red;
+  animation: load infinite 300ms;
+}
+
+@keyframes load {
+  from{rotate: 0deg;}
+  to{rotate: 360deg;}
+}
+
+.navbar{
+  height:50px;
+  width: 100%;
+  background-color: #1e3a8a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  text-shadow: 0 0 5px black;
+  z-index: 10;
+}
+
+.search{
+  height: 31px;
+  width: 200px;
+  border-radius: 20px;
+  padding: 0 10px;
+  outline: none;
+  border: 1px solid gray;
+  font-size: 16px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-right: none;
+}
+
+.searchclear{
+  height: 33px;
+  width: 30px;
+  border: 1px solid gray;
+  font-weight: bold;
+  background-color: white;
+  cursor: pointer;
+  border-left: none;
+}
+.navbar div{
+  display: flex;
+  align-items: center;
+}
+
+.posts{
+  margin-top: 70px;
+  margin-bottom: 70px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1em 2em;
+}
+
+.pagination{
+  height: 50px;
+  width: 100%;
+  background-color: #1e293b;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+.pagination button{
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  border: 1px solid gray;
+  font-weight: bold;
+  cursor: pointer;
+}
+.pagination p{
+  color: white;
+  font-size: 18px;
+}
+
+.posts .post{
+  padding: 10px 10px;
+  background-color: aliceblue;
+  border-radius: 20px;
+  transition: all ease 0.5s;
+}
+.post:hover{
+  scale: 1.05;
+}
+
+.posts .post .posttitle{
+  font-size: 20px;
+}
+
+.posts .post .postbody{
+  background-color: rgb(18, 107, 185);
+  padding: 10px 10px;
+  color: white;
+  border-radius: 20px;
+}
+
+.linktag{
+  text-decoration: none;
+  color: blue;
+}
+.singlepost{
+  height: 450px;
+  width: 600px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px gray;
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 200px auto;
+  background-color: aliceblue;
+}
+
+.singletitle{
+  font-size: 40px;
+  color: blue;
+}
+.singlebody{
+  font-size: 25px;
+  background-color: rgb(18, 107, 185);;
+  color: white;
+  padding: 20px 20px;
+  border-radius: 20px;
+}
